@@ -1,7 +1,7 @@
-/* °üº¬Í·ÎÄ¼ş */
+/* åŒ…å«é ­æ–‡ä»¶ */
 #include "zigzag.h"
 
-/* ÄÚ²¿È«¾Ö±äÁ¿¶¨Òå */
+/* å…§éƒ¨å…¨å±€è®Šé‡å®šç¾© */
 const int ZIGZAG[64] =
 {
      0,  1,  8, 16,  9,  2,  3, 10,
@@ -14,7 +14,7 @@ const int ZIGZAG[64] =
     53, 60, 61, 54, 47, 55, 62, 63,
 };
 
-/* º¯ÊıÊµÏÖ */
+/* å‡½æ•¸å¯¦ç¾ */
 void zigzag_encode(int *data)
 {
     int buf[64], i;
@@ -28,11 +28,4 @@ void zigzag_decode(int *data)
     for (i=0; i<64; i++) buf [ZIGZAG[i]] = data[i];
     for (i=0; i<64; i++) data[i] = buf[i];
 }
-
-
-
-
-
-
-
 

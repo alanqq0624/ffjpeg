@@ -1,15 +1,15 @@
-// °üº¬Í·ÎÄ¼ş
+// åŒ…å«é ­æ–‡ä»¶
 #include <stdlib.h>
 #include <string.h>
 #include "stdefine.h"
 #include "bitstr.h"
 
-// Ô¤±àÒë¿ª¹Ø
+// é ç·¨è­¯é–‹é—œ
 #define USE_JPEG_BITSTR  1
 
 //+++ memory bitstr +++//
 
-/* ÄÚ²¿ÀàĞÍ¶¨Òå */
+/* å…§éƒ¨é¡å‹å®šç¾© */
 enum {
     BITSTR_MEM = 0,
     BITSTR_FILE,
@@ -24,7 +24,7 @@ typedef struct {
     int   curpos;
 } MBITSTR;
 
-/* º¯ÊıÊµÏÖ */
+/* å‡½æ•¸å¯¦ç¾ */
 static void* mbitstr_open(void *buf, int len)
 {
     MBITSTR *context = calloc(1, sizeof(MBITSTR));
@@ -91,7 +91,7 @@ static int mbitstr_flush(void *stream) { return stream ? 0 : EOF; }
 
 //+++ file bitstr +++//
 
-/* ÄÚ²¿ÀàĞÍ¶¨Òå */
+/* å…§éƒ¨é¡å‹å®šç¾© */
 typedef struct {
     int   type;
     DWORD bitbuf;
@@ -99,7 +99,7 @@ typedef struct {
     FILE *fp;
 } FBITSTR;
 
-/* º¯ÊıÊµÏÖ */
+/* å‡½æ•¸å¯¦ç¾ */
 static void* fbitstr_open(char *file, char *mode)
 {
     FBITSTR *context = calloc(1, sizeof(FBITSTR));
@@ -172,7 +172,7 @@ static int fbitstr_flush(void *stream)
 
 
 
-// º¯ÊıÊµÏÖ
+// å‡½æ•¸å¯¦ç¾
 void* bitstr_open(void *fnamebuf, char *fmode, int bufsize)
 {
     if (strcmp(fmode, "mem") == 0) {
@@ -324,12 +324,4 @@ int bitstr_flush(void *stream, int flag)
     }
     return EOF;
 }
-
-
-
-
-
-
-
-
 

@@ -1,14 +1,14 @@
 #ifndef __FFJPEG_JFIF_H__
 #define __FFJPEG_JFIF_H__
 
-// °üº¬Í·ÎÄ¼ş
+// åŒ…å«é ­æ–‡ä»¶
 #include "bmp.h"
 
 #ifdef __cplusplus
 extern "C" {
 #endif
 
-/* º¯ÊıÉùÃ÷ */
+/* å‡½æ•¸è²æ˜ */
 void* jfif_load(char *file);
 int   jfif_save(void *ctxt, char *file);
 void  jfif_free(void *ctxt);

@@ -5,10 +5,10 @@
 extern "C" {
 #endif
 
-/* 全局变量声明 */
+/* 全局變量聲明 */
 extern const int ZIGZAG[64];
 
-/* 函数声明 */
+/* 函數聲明 */
 void zigzag_encode(int *data);
 void zigzag_decode(int *data);
 
@@ -17,11 +17,4 @@ void zigzag_decode(int *data);
 #endif
 
 #endif
-
-
-
-
-
-
-
 

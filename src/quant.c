@@ -1,7 +1,7 @@
-/* °üº¬Í·ÎÄ¼ş */
+/* åŒ…å«é ­æ–‡ä»¶ */
 #include "quant.h"
 
-/* È«¾Ö±äÁ¿¶¨Òå */
+/* å…¨å±€è®Šé‡å®šç¾© */
 const int STD_QUANT_TAB_LUMIN[64] =
 {
     16, 11, 10, 16, 24, 40, 51, 61,
@@ -27,7 +27,7 @@ const int STD_QUANT_TAB_CHROM[64] =
 };
 
 
-/* º¯ÊıÊµÏÖ */
+/* å‡½æ•¸å¯¦ç¾ */
 void quant_encode(int du[64], int qtab[64])
 {
     int i; for (i=0; i<64; i++) du[i] /= qtab[i];
@@ -37,10 +37,4 @@ void quant_decode(int du[64], int qtab[64])
 {
     int i; for (i=0; i<64; i++) du[i] *= qtab[i];
 }
-
-
-
-
-
-
 

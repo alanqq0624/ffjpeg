@@ -1,4 +1,4 @@
-/* °üº¬Í·ÎÄ¼þ */
+/* åŒ…å«é ­æ–‡ä»¶ */
 #include "color.h"
 
 /*
@@ -21,7 +21,7 @@ void yuv_to_rgb(int y, int u, int v, BYTE *r, BYTE *g, BYTE *b)
     tg = (y - (FLOAT2FIX(0.34414f) * u >> FIXQ) - (FLOAT2FIX(0.71414f) * v >> FIXQ)) >> FIXQ;
     tb = (y + (FLOAT2FIX(1.77200f) * u >> FIXQ)) >> FIXQ;
 
-    /* ±¥ºÍ´¦Àí */
+    /* é£½å’Œè™•ç† */
     *r = tr < 0 ? 0 : tr < 255 ? tr : 255;
     *g = tg < 0 ? 0 : tg < 255 ? tg : 255;
     *b = tb < 0 ? 0 : tb < 255 ? tb : 255;
@@ -38,8 +38,4 @@ void rgb_to_yuv(BYTE r, BYTE g, BYTE b, int *y, int *u, int *v)
     *u >>= FIXQ - 2;
     *v >>= FIXQ - 2;
 }
-
-
-
-
 

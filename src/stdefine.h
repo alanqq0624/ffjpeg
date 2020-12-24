@@ -1,4 +1,4 @@
-/* ��׼ͷ�ļ� */
+/* 標準頭文件 */
 #ifndef __STDEFINE_H__
 #define __STDEFINE_H__
 
@@ -22,5 +22,4 @@ typedef uint32_t DWORD;
 #define ALIGN(x, y)   (((x) + (y) - 1) / (y) * (y))
 
 #endif
-
 

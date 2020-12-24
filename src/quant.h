@@ -5,11 +5,11 @@
 extern "C" {
 #endif
 
-/* 全局变量声明 */
+/* 鍏ㄥ眬璁婇噺鑱叉槑 */
 extern const int STD_QUANT_TAB_LUMIN[64];
 extern const int STD_QUANT_TAB_CHROM[64];
 
-/* 函数声明 */
+/* 鍑芥暩鑱叉槑 */
 void quant_encode(int du[64], int qtab[64]);
 void quant_decode(int du[64], int qtab[64]);
 
@@ -18,16 +18,4 @@ void quant_decode(int du[64], int qtab[64]);
 #endif
 
 #endif
-
-
-
-
-
-
-
-
-
-
-
-
 

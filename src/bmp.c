@@ -1,4 +1,4 @@
-// °üº¬Í·ÎÄ¼ş
+// åŒ…å«é ­æ–‡ä»¶
 #include <stdlib.h>
 #include <stdio.h>
 #include "stdefine.h"
@@ -6,7 +6,7 @@
 
 #define TEST_BMP  0
 
-// ÄÚ²¿ÀàĞÍ¶¨Òå
+// å…§éƒ¨é¡å‹å®šç¾©
 #pragma pack(1)
 typedef struct { 
     WORD   bfType;
@@ -28,7 +28,7 @@ typedef struct {
 } BMPFILEHEADER;
 #pragma pack()
 
-/* º¯ÊıÊµÏÖ */
+/* å‡½æ•¸å¯¦ç¾ */
 int bmp_load(BMP *pb, char *file)
 {
     BMPFILEHEADER header = {0};
@@ -118,13 +118,4 @@ int main(void)
     return 0;
 }
 #endif
-
-
-
-
-
-
-
-
-
 

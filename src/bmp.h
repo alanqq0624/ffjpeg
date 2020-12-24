@@ -5,17 +5,17 @@
 extern "C" {
 #endif
 
-/* ÀàĞÍ¶¨Òå */
-/* BMP ¶ÔÏóµÄÀàĞÍ¶¨Òå */
+/* é¡å‹å®šç¾© */
+/* BMP å°è±¡çš„é¡å‹å®šç¾© */
 typedef struct
 {
-    int   width;   /* ¿í¶È */
-    int   height;  /* ¸ß¶È */
-    int   stride;  /* ĞĞ×Ö½ÚÊı */
-    void *pdata;   /* Ö¸ÏòÊı¾İ */
+    int   width;   /* å¯¬åº¦ */
+    int   height;  /* é«˜åº¦ */
+    int   stride;  /* è¡Œå­—ç¯€æ•¸ */
+    void *pdata;   /* æŒ‡å‘æ•¸æ“š */
 } BMP;
 
-/* º¯ÊıÉùÃ÷ */
+/* å‡½æ•¸è²æ˜ */
 int  bmp_load  (BMP *pb, char *file);
 int  bmp_create(BMP *pb, int w, int h);
 

@@ -1,7 +1,7 @@
 #ifndef __FFJPEG_COLOR_H__
 #define __FFJPEG_COLOR_H__
 
-// °üº¬Í·ÎÄ¼ş
+// åŒ…å«é ­æ–‡ä»¶
 #include "stdefine.h"
 
 #ifdef __cplusplus
@@ -16,14 +16,4 @@ void rgb_to_yuv(BYTE r, BYTE g, BYTE b, int *y, int *u, int *v);
 #endif
 
 #endif
-
-
-
-
-
-
-
-
-
-
 
